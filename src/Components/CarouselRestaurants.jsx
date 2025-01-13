@@ -33,7 +33,7 @@ const CarouselRestaurants = () => {
         <div className='grid grid-cols-4'>
             {data && data.map((item) => {
                 let obj = item.card.card.info
-                console.log(obj)
+                // console.log(obj)
                 return <Card area={obj.areaName} cuisines={obj.cuisines} id={obj.id} img={obj.cloudinaryImageId} c={"tr"} name={obj.name} time={obj.sla.deliveryTime} rating={obj.avgRating} />
             })}
         </div>

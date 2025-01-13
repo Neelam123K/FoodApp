@@ -6,6 +6,7 @@ import Menu from './Components/Menu'
 import CarouselRestaurants from './Components/CarouselRestaurants'
 import Search from './Components/Search'
 import Checkout from './Components/Checkout'
+import Error from './Components/Error'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path='/carrestaurants/:id' element={<CarouselRestaurants  />} />
         <Route path='/search' element={<Search  />} />
         <Route path='/checkout' element={<Checkout  />} />
+        <Route path='*' element={<Error />} />
       </Routes>
 
     </div>
